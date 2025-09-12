@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Arup Mazumder</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #00264d; /* Dark Blue Background */
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #00264d;
+      color: white;
+    }
+    
+    .icon {
+      width: 100px;
+      height: 100px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+    .icon img {
+      width: 90px;
+      height: 90px;
+    }
+
+    .subtitle a {
+      color: #cce6ff;
+      text-decoration: none;
+    }
+    .subtitle a:hover {
+      text-decoration: underline;
+    }
+    .card {
+      background: white;
+      max-width: 900px;
+      margin: -30px auto 30px; /* Added bottom margin */
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #666;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
+    nav a:hover, nav a.active {
+      background: #f0f0f0;
+      color: #333;
+    }
+    section {
+      padding: 0 20px;
+    }
+     h2 {
+        text-align: center;
+    }
+    .divider {
+      width: 60px;
+      height: 2px;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      margin: 20px auto;
+    }
+    
+    /* Contact Page Specific Styles */
+    .contact-info {
+        text-align: center;
+        margin-bottom: 40px;
+        line-height: 1.7;
+    }
+    .contact-info a {
+        color: #2575fc;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #555;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: inherit;
+        font-size: 1rem;
+    }
+    textarea {
+        resize: vertical;
+        min-height: 140px;
+    }
+    button[type="submit"] {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+        transition: opacity 0.3s;
+    }
+    button[type="submit"]:hover {
+        opacity: 0.9;
+    }
+    /* --- Responsive Rules for Mobile --- */
+    @media (max-width: 768px) {
+        header {
+            padding: 30px 15px;
+        }
+
+        .card {
+            /* Remove negative margin and reduce side padding on mobile */
+            margin: 0 auto 30px;
+            padding: 20px 15px;
+            border-radius: 0; /* Make card full-width on mobile */
+        }
+
+        nav a {
+            /* Stack the navigation links vertically */
+            display: block;
+            margin: 10px auto;
+            background: #f0f0f0; /* Give them a background to show their area */
+        }
+
+        h1 {
+            font-size: 2em; /* Make the main title slightly smaller */
+        }
+    } 
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="icon">
+    <img src="IMG20250407063947 (1).jpg" alt="My photo">
+  </div>
+  <h1>Arup Mazumder</h1>
+  <p class="subtitle">Lattice-based Cryptography Researcher @ <a href="https://iiserb.ac.in" target="_blank">IISER Bhopal</a></p>
+</header>
+
+<div class="card">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#">Notes</a>
+    <a href="Arup_CV.pdf" target="_blank">CV</a>
+    <a href="#">Publication</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="contacts.html" class="active">Contacts</a>
+  </nav>
+
+  <section>
+    <h2>Get in Touch</h2>
+    <div class="divider"></div>
+    
+    <div class="contact-info">
+        <p>You can reach me via email or find my work on the platforms below.</p>
+        <p><strong>Email:</strong> <a href="mailto:mazumderj33[at]gmail.com">mazumderj33@gmail.com</a></p>
+        <p><strong>Office:</strong> 110D, Academic Building-4, Department of EECS, IISER Bhopal, Bhauri, MP, 462066</p>
+        <p>
+            <a href="https://www.linkedin.com/in/arup-mazumder-849a30217/" target="_blank">LinkedIn</a> | 
+            <a href="#" target="_blank">Google Scholar</a> | 
+            <a href="https://github.com/Arup-M" target="_blank">GitHub</a>
+        </p>
+    </div>
+
+    <h2>Send a Message</h2>
+    <div class="divider"></div>
+
+    <form action="https://formspree.io/f/meoldjap" method="POST">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <div style="text-align: center;">
+            <button type="submit">Send Message</button>
+        </div>
+    </form>
+  </section>
+</div>
+
+</body>
+</html>
