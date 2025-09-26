@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes | Arup Mazumder</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #00264d; /* Dark Blue Background */
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #00264d;
+      color: white;
+    }
+
+    .icon {
+      width: 100px;
+      height: 100px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+    .icon img {
+      width: 90px;
+      height: 90px;
+    }
+
+    .subtitle a {
+      color: #cce6ff;
+      text-decoration: none;
+    }
+    .subtitle a:hover {
+      text-decoration: underline;
+    }
+    .card {
+      background: white;
+      max-width: 900px;
+      margin: -30px auto 0;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #666;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
+    nav a:hover, nav a.active {
+      background: #f0f0f0;
+      color: #333;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section h2 {
+      text-align: center;
+    }
+    .divider {
+      width: 60px;
+      height: 2px;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      margin: 20px auto;
+    }
+    .note {
+      margin-bottom: 25px;
+      padding: 20px;
+      background: #f9f9f9;
+      border-left: 5px solid #2575fc;
+      border-radius: 5px;
+    }
+    .note h3 {
+      margin-top: 0;
+      color: #00264d;
+    }
+
+    /* Responsive Rules */
+    @media (max-width: 768px) {
+        header {
+            padding: 30px 15px;
+        }
+        .card {
+            margin: 0 auto 30px;
+            padding: 20px 15px;
+            border-radius: 0;
+        }
+        nav a {
+            display: block;
+            margin: 10px auto;
+            background: #f0f0f0;
+        }
+        h1 {
+            font-size: 2em;
+        }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="icon">
+    <img src="IMG20250407063947 (1).jpg" alt="My photo">
+  </div>
+  <h1>Arup Mazumder</h1>
+  <p class="subtitle">Lattice-based Cryptography Researcher @ <a href="https://iiserb.ac.in" target="_blank">IISER Bhopal</a></p>
+</header>
+
+<div class="card">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="note.html" class="active">Notes</a>
+    <a href="Arup_CV.pdf" target="_blank">CV</a>
+    <a href="#">Publication</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="contacts.html">Contacts</a>
+  </nav>
+
+  <section>
+    <h2>My Notes</h2>
+    <div class="divider"></div>
+
+    <div class="note">
+      <h3>📌 Primal Attack on Learning With Errors (LWE) </h3>
+      <p>A short write-up about the definition of lattices, basis reduction, and applications in cryptography.</p>
+    </div>
+  </section>
+</div>
+
+</body>
+</html>
